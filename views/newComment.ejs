@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align:center"> Add A New Comment to <%=camp.name%> </h1>
+        <div style="width:30%; margin: 30px auto;">
+        <form action="/campgrounds/<%=camp._id%>/comment" method="POST">
+            <div>
+                <label> Comment:</label>
+                <input class="form-control" type="text" placeholder="your comment" name="comment[text]">
+            </div>
+            
+            <!--<div class="form-group">-->
+            <!--    <label>Your name:</label>-->
+            <!--    <input class="form-control" type="text" placeholder="author"    name="comment[author]">-->
+            <!--</div>-->
+
+            <div class="form-group">
+
+                <button class="btn btn-lg btn-defaults btn-block btn-primary">Submit</button>
+            </div>
+
+        </form>
+        </div>
+    </div>
+    
+    <p> P.S. this is the newComment.ejs file</p>
+</div>
+
+<% include partials/footer %>

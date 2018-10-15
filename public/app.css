@@ -1,0 +1,22 @@
+
+
+body {
+        /*color: yellow;*/
+        /*background: black;*/
+}
+
+.thumbnail img {
+        width: 100%;
+}
+
+.thumbnail {
+        padding: 0px;
+}
+
+.thumbnail .caption-full {
+        padding: 9px;
+}
+ 
+.delete-form {
+        display: inline;
+}
